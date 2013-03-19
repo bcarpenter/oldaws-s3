@@ -60,10 +60,10 @@ namespace :dist do
   spec = Gem::Specification.new do |s|
     s.name              = 'oldaws-s3'
     s.version           = Gem::Version.new(OldAWS::S3::Version)
-    s.summary           = "[DEPRECATED] Client library for Amazon's Simple Storage Service's REST API"
-    s.description       = "This gem has been modified from the original (and outdated) aws-s3 gem to avoid a namespace clash with the official Amazon aws-sdk gem.  Please use the newer, better, official aws-sdk gem whenever possible!!!"
-    s.email             = 'marcel@vernix.org'
-    s.author            = 'Marcel Molina Jr.'
+    s.summary           = "[DEPRECATED] OUTDATED Client library for Amazon's Simple Storage Service's REST API"
+    s.description       = "WARNING: This gem is very old and has been modified from the original (and outdated) aws-s3 gem to avoid a namespace clash with the official Amazon aws-sdk gem.  Please use the newer, better, official aws-sdk gem whenever possible!!!"
+    s.email             = ['ben@bencarpenter.org', 'marcel@vernix.org']
+    s.authors           = ['Ben Carpenter', 'Marcel Molina Jr.']
     s.has_rdoc          = true
     s.extra_rdoc_files  = %w(README COPYING INSTALL)
     s.homepage          = 'http://amazon.rubyforge.org'
