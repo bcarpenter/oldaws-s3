@@ -1,4 +1,10 @@
+
 = OldAWS::S3
+
+== DISCLAIMERS
+[DEPRECATED] OUTDATED Client library for Amazon's Simple Storage Service's REST API
+WARNING: This gem is very old and has been modified from the original (and outdated) aws-s3 gem to avoid a namespace clash with the official Amazon aws-sdk gem.  Please use the newer, better, official aws-sdk gem whenever possible!!!
+
 
 OldAWS::S3 is a Ruby library for Amazon's Simple Storage Service's REST API (http://aws.amazon.com/s3).
 Full documentation of the currently supported API can be found at http://docs.amazonwebservices.com/AmazonS3/2006-03-01.
