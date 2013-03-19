@@ -60,8 +60,8 @@ namespace :dist do
   spec = Gem::Specification.new do |s|
     s.name              = 'oldaws-s3'
     s.version           = Gem::Version.new(OldAWS::S3::Version)
-    s.summary           = "Client library for Amazon's Simple Storage Service's REST API"
-    s.description       = s.summary
+    s.summary           = "[DEPRECATED] Client library for Amazon's Simple Storage Service's REST API"
+    s.description       = "This gem has been modified from the original (and outdated) aws-s3 gem to avoid a namespace clash with the official Amazon aws-sdk gem.  Please use the newer, better, official aws-sdk gem whenever possible!!!"
     s.email             = 'marcel@vernix.org'
     s.author            = 'Marcel Molina Jr.'
     s.has_rdoc          = true
