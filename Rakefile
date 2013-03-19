@@ -36,7 +36,7 @@ namespace :doc do
   end
 
   task :readme do
-    require 'support/rdoc/code_info'
+    require File.join(File.dirname(__FILE__),'support','rdoc','code_info')
     RDoc::CodeInfo.parse('lib/**/*.rb')
     
     strip_comments = lambda {|comment| comment.gsub(/^# ?/, '')}
