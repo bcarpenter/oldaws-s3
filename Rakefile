@@ -1,9 +1,9 @@
 require 'rubygems'
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rdoc/task'
 require 'rake/packagetask'
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 
 require File.dirname(__FILE__) + '/lib/oldaws/s3'
 
@@ -82,7 +82,7 @@ namespace :dist do
     
   # Regenerate README before packaging
   task :package => 'doc:readme'
-  Rake::GemPackageTask.new(spec) do |pkg|
+  Gem::PackageTask.new(spec) do |pkg|
     pkg.need_tar_gz = true
     pkg.package_files.include('{lib,script,test,support}/**/*')
     pkg.package_files.include('README')
